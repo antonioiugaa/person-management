@@ -1,0 +1,184 @@
+/* PersonList Styles - Ultra Modern */
+.card-list {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header-custom {
+  background: white;
+  border-bottom: 2px solid #f5f5f5;
+  padding: 1.8rem;
+}
+
+.search-group {
+  position: relative;
+}
+
+.search-input {
+  padding-left: 3rem !important;
+  padding-right: 1rem !important;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  background: #f9f9f9;
+  font-weight: 500;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+  background: white;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  font-size: 1.1rem;
+}
+
+.persons-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.persons-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.persons-list::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.persons-list::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.persons-list::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c0;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #f8f8f8;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.person-item:hover {
+  background-color: #f9f9f9;
+  padding-left: 1.8rem;
+}
+
+.person-item.active {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-left: 4px solid #667eea;
+  padding-left: calc(1.5rem - 4px);
+}
+
+.person-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.person-info {
+  min-width: 0;
+}
+
+.person-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.person-cnp {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  font-family: 'Courier New', monospace;
+}
+
+.person-actions {
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.person-item:hover .person-actions {
+  opacity: 1;
+}
+
+.btn-action {
+  padding: 0.4rem 0.6rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.btn-action.btn-edit:hover {
+  color: #3498db;
+  transform: scale(1.2);
+}
+
+.btn-action.btn-delete:hover {
+  color: #e74c3c;
+  transform: scale(1.2);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: #95a5a6;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}

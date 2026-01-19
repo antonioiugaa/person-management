@@ -1,0 +1,66 @@
+/* Dashboard Styles - Ultra Modern */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2.5rem 2rem !important;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn-floating-add {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-floating-add:hover {
+  transform: scale(1.15) translateY(-5px) rotate(90deg);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+}
+
+.btn-floating-add:active {
+  transform: scale(1.1);
+}
+
+.alert-message {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  color: #1a5276;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(132, 250, 176, 0.4);
+  padding: 18px 24px;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
