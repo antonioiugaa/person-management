@@ -80,6 +80,10 @@
   color: white;
   font-weight: 600;
   transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .btn-logout:hover {

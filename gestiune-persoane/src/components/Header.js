@@ -7,8 +7,8 @@ import '../styles/Header.css';
 const Header = ({ user, onLogout }) => {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    onLogout();
+  const handleLogout = async () => {
+    await onLogout();
     navigate('/');
   };
 
